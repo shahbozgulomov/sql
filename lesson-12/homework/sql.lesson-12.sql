@@ -1,14 +1,12 @@
---easy questions lesson-12 
+select ascii('A') 
 
-select ascii('A') ----- 65
-
-select len('HELLO WORLD') ----11
+select len('HELLO WORLD') 
 
 select REVERSE('OpenAI')
 
 select space(5)
 
---LTRIM
+select LTRIM()
 
 select upper('sql')
 
@@ -24,11 +22,10 @@ SELECT REPLACE ('apple pie','apple','orange')
 
 select charindex('Learn SQL with LearnSQL','learn')
 
---What function can you use to check if the string 'Server' contains 'er' using SQL?
 select CHARINDEX( 'Server','er')
 
---How can you split the string cinto individual words using String_split()?
-select string_split('apple,orange,banana',',')
+SELECT value AS word
+FROM STRING_SPLIT(@string, ' ');
 
 select power(2,3)
 
@@ -42,11 +39,9 @@ select day('2025-02-03')
 
 select DATEADD(day,10,'2025-02-03')
 
---medium questions lesson 12
-
 select char('65')
 
-ltrim() - clear spaces from the left while rtrim() from the right
+select ltrim() - clear spaces from the left while rtrim() from the right
 
 select CHARINDEX('SQL','Learn SQL basics')
 
